@@ -1,0 +1,86 @@
+-- phpMyAdmin SQL Dump
+-- version 3.4.10.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Nov 19, 2012 at 07:29 PM
+-- Server version: 5.5.28
+-- PHP Version: 5.3.10-1ubuntu3.4
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `starvol`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `grupos`
+--
+
+CREATE TABLE IF NOT EXISTS `grupos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `grupo` varchar(255) NOT NULL,
+  `nr_musicas` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+
+--
+-- Dumping data for table `grupos`
+--
+
+INSERT INTO `grupos` (`id`, `grupo`, `nr_musicas`) VALUES
+(10, 'grupo1', 3),
+(12, 'grupo2', 6);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `musicas`
+--
+
+CREATE TABLE IF NOT EXISTS `musicas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `autor` text NOT NULL,
+  `tema` text NOT NULL,
+  `youtube` text NOT NULL,
+  `duracao` text NOT NULL,
+  `grupo` text NOT NULL,
+  `gosto` int(11) NOT NULL,
+  `n_gosto` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
+
+--
+-- Dumping data for table `musicas`
+--
+
+INSERT INTO `musicas` (`id`, `autor`, `tema`, `youtube`, `duracao`, `grupo`, `gosto`, `n_gosto`) VALUES
+(2, 'autor', 'tema', 'youruvw', 'sasas', '1', 0, 0),
+(3, 'teste', 'teste', 'teste', 'teste', '8', 0, 0),
+(4, 'teste', 'teste', 'teste', 'teste', '8', 0, 0),
+(5, 'teste', 'teste', 'teste', 'teste', '8', 0, 0),
+(6, 'teste', 'teste', 'teste', 'teste', '8', 0, 0),
+(7, 'teste', 'teste', 'teste', 'teste', '8', 0, 0),
+(8, 'teste', 'teste', 'teste', 'teste', '1', 0, 0),
+(16, 'asdas', 'asdgdfg', 'hhhfh', 'hhh', '9', 0, 0),
+(17, 'tl&ccedil;ksdg', 'sdkfsd', 'ks&ccedil;dkf&ccedil;sd', '\n03:34\n', '10', 0, 0),
+(18, 'sefsdlf', 's&ordm;fsdplf', 'http://www.youtube.com/watch?v=ZPkE2hHneP4', '\n03:34\n', '10', 0, 0),
+(19, 'asfdsad', 'asdasd', 'http://www.youtube.com/watch?v=wHC8RRMncio&amp;feature=g-vrec', '\n05:33\n', '10', 0, 0),
+(21, 'autor', 'tema', 'youtube', '\n07:44\n', '12', 0, 0),
+(22, 'autor', 'tema', 'youtube', '\n07:44\n', '12', 0, 0),
+(23, 'autor', 'tema', 'youtube', '\n07:44\n', '12', 0, 0),
+(24, 'autor', 'tema', 'youtube', '\n07:44\n', '12', 0, 0),
+(25, 'autor', 'tema', 'youtube', '\n07:44\n', '12', 0, 0);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
