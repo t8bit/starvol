@@ -1,10 +1,8 @@
-<?php
+﻿<?php
 require_once('../settings.php');
 require_once('../core/notifications.php');
 require_once('../core/db.class.php');
 require_once('../core/youtube.class.php');
-
-
 
 //classes
 class grupo extends db
@@ -142,6 +140,4 @@ echo "</pre>";*/
 
 list($sucess,$error)=$database_error->message();
 list($sucess,$error)=$empty_var_error->message();
-
-
 ?>
