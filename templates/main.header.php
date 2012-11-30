@@ -23,10 +23,10 @@
  <meta property="og:site_name" content="{nome do site}" />
  <meta property="og:description" content="{descrição}" />
 
- <title>{nome do site}</title>
+ <title>Página inicial - Starvol</title>
 
- <link rel="shortcut icon" href="../static/img/icon.ico?1" /> 
- <link rel="icon" href="../static/img/icon.ico?1" />
+ <link rel="shortcut icon" href="../static/img/icon.ico?<?=$rand;?>" /> 
+ <link rel="icon" href="../static/img/icon.ico?<?=$rand;?>" />
 
  <link rel="stylesheet" type="text/css" href="../static/css/index.style.css?<?php echo $rand; ?>" />
 
@@ -39,7 +39,7 @@
  <script>
  $(function(){
     $('.letter').slimScroll({
-        height: '230px'
+        height: '300px'
     });
  });
  </script>
@@ -54,30 +54,38 @@
                       <a href="/" title="Página inicial" class="logo"><div id="logo"></div></a>
                   </div>
 
+                  <nav id="menu">
+                     <ul class="menu">
+                      <li><a href="#" class="current"><b>I</b>nício</a></li>
+                      <li><a href="#"><b>P</b>rogramas</a></li>
+                      <li><a href="#"><b>T</b>op musical</a></li>
+                      <li><a href="#"><b>T</b>op social</a></li>
+                      <li><a href="#"><b>B</b>log</a></li>
+ 
+                      <li style="float:right;"><a href="#" onClick="openRegister(); return false;">Registar-me</a></li>
+                      <li style="float:right;"><a href="#" onClick="openLogin(); return false;">Login</a></li>
+                     </ul>
+                  </nav>
+
+
                   <div id="language">
                       <a href="#" title="Português" class="flag"><img src="../static/img/pt.png" alt="pt"></a>
                       <a href="#" title="Inglês" class="flag"><img src="../static/img/uk.png" alt="uk"></a>
                       <a href="#" title="Espanhol" class="flag"><img src="../static/img/es.png" alt="es"></a>
                   </div>
 
+                  <div id="playing">
+                    <div><span>A TOCAR:</span></div>
+                    <div>“ <span>Artista:</span> David Guetta</div>
+                    <div><span>Musica:</span> She Wolf (Falling To Pieces) (feat. Sia) ”</div>
+                  </div>
+
               </div>
+
            <div class="clear"></div>
          </header>
 
-          <div class="clear"><!--//--></div>
 
-         <nav id="menu">
-              <ul class="menu">
-                 <li><a href="#" class="current"><b>i</b>nício</a></li>
-                 <li><a href="#"><b>p</b>rogramas</a></li>
-                 <li><a href="#"><b>t</b>op musical</a></li>
-                 <li><a href="#"><b>t</b>op social</a></li>
-                 <li><a href="#"><b>b</b>log</a></li>
-
-                 <li style="float:right;"><a href="#" onClick="openRegister(); return false;">registar-me</a></li>
-                 <li style="float:right;"><a href="#" onClick="openLogin(); return false;">login</a></li>
-              </ul>
-         </nav>
 
           <div class="clear"><!--//--></div>
 

@@ -15,14 +15,14 @@
                   <span class="rights">Copyright © 2012 starvol</span>
 
                   <span class="credits">
-                      Developed by <a href="http://tiagoada.com/" class="link" title="www.tiagoada.com" target="_blank">Tiago André</a> and 
+                      Developed by <a href="http://tiagoada.com/" class="link" title="www.tiagoada.com" target="_blank">Tiago André</a> & 
                       <a href="http://vitorarantes.net/" class="link" title="www.vitorarantes.net" target="_blank">Vitor Arantes</a>
                   </span>
               </div>
           <div class="clear"></div>
          </footer>
           
-         <div style="height:20px;"></div>
+         <div style="height:13px;"></div>
 
 </body>
 </html>
